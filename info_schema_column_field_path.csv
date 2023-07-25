@@ -1,0 +1,551 @@
+table_name,column_name,data_type,description
+tlc_yellow_trips_2023,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_yellow_trips_2023,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_yellow_trips_2023,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_yellow_trips_2023,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_yellow_trips_2023,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_yellow_trips_2023,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_yellow_trips_2023,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_yellow_trips_2023,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_yellow_trips_2023,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_yellow_trips_2023,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_yellow_trips_2023,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_yellow_trips_2023,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_yellow_trips_2023,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_yellow_trips_2023,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_yellow_trips_2023,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_yellow_trips_2023,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_yellow_trips_2023,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_yellow_trips_2023,data_file_year,INT64,Datafile timestamp year value
+tlc_yellow_trips_2023,data_file_month,INT64,Datafile timestamp month value
+tlc_yellow_trips_2016,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_yellow_trips_2016,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_yellow_trips_2016,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_yellow_trips_2016,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_yellow_trips_2016,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_yellow_trips_2016,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_yellow_trips_2016,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_yellow_trips_2016,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_yellow_trips_2016,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_yellow_trips_2016,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_yellow_trips_2016,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_yellow_trips_2016,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_yellow_trips_2016,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_yellow_trips_2016,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_yellow_trips_2016,airport_fee,NUMERIC,
+tlc_yellow_trips_2016,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_yellow_trips_2016,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_yellow_trips_2016,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_yellow_trips_2016,data_file_year,INT64,Datafile timestamp year value
+tlc_yellow_trips_2016,data_file_month,INT64,Datafile timestamp month value
+tlc_green_trips_2018,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_green_trips_2018,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_green_trips_2018,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_green_trips_2018,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_green_trips_2018,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_green_trips_2018,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_green_trips_2018,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_green_trips_2018,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_green_trips_2018,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_green_trips_2018,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_green_trips_2018,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_green_trips_2018,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_green_trips_2018,ehail_fee,NUMERIC,
+tlc_green_trips_2018,airport_fee,NUMERIC,
+tlc_green_trips_2018,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_green_trips_2018,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_green_trips_2018,distance_between_service,NUMERIC,
+tlc_green_trips_2018,time_between_service,INT64,
+tlc_green_trips_2018,trip_type,STRING,A code indicating whether the trip was a street-hail or a dispatch that is automatically assigned based on the metered rate in use but can be altered by the driver. 1= Street-hail 2= Dispatch
+tlc_green_trips_2018,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_green_trips_2018,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_green_trips_2018,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_green_trips_2018,data_file_year,INT64,Datafile timestamp year value
+tlc_green_trips_2018,data_file_month,INT64,Datafile timestamp month value
+tlc_green_trips_2019,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_green_trips_2019,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_green_trips_2019,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_green_trips_2019,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_green_trips_2019,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_green_trips_2019,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_green_trips_2019,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_green_trips_2019,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_green_trips_2019,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_green_trips_2019,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_green_trips_2019,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_green_trips_2019,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_green_trips_2019,ehail_fee,NUMERIC,
+tlc_green_trips_2019,airport_fee,NUMERIC,
+tlc_green_trips_2019,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_green_trips_2019,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_green_trips_2019,distance_between_service,NUMERIC,
+tlc_green_trips_2019,time_between_service,INT64,
+tlc_green_trips_2019,trip_type,STRING,A code indicating whether the trip was a street-hail or a dispatch that is automatically assigned based on the metered rate in use but can be altered by the driver. 1= Street-hail 2= Dispatch
+tlc_green_trips_2019,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_green_trips_2019,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_green_trips_2019,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_green_trips_2019,data_file_year,INT64,Datafile timestamp year value
+tlc_green_trips_2019,data_file_month,INT64,Datafile timestamp month value
+tlc_fhv_trips_2016,location_id,INT64,The TLC taxi zone of the trip pick-up
+tlc_fhv_trips_2016,pickup_datetime,DATETIME,The date and time of the trip pick-up.
+tlc_fhv_trips_2016,dispatching_base_num,STRING,The TLC Base License Number of the base that dispatched the trip.
+tlc_fhv_trips_2016,borough,STRING,This is Pickup borough
+tlc_fhv_trips_2016,zone,STRING,This is Pickup zone
+tlc_fhv_trips_2016,service_zone,STRING,This is Pickup service_zone
+tlc_yellow_trips_2014,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_yellow_trips_2014,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_yellow_trips_2014,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_yellow_trips_2014,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_yellow_trips_2014,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_yellow_trips_2014,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_yellow_trips_2014,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_yellow_trips_2014,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_yellow_trips_2014,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_yellow_trips_2014,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_yellow_trips_2014,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_yellow_trips_2014,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_yellow_trips_2014,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_yellow_trips_2014,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_yellow_trips_2014,airport_fee,NUMERIC,
+tlc_yellow_trips_2014,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_yellow_trips_2014,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_yellow_trips_2014,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_yellow_trips_2014,data_file_year,INT64,Datafile timestamp year value
+tlc_yellow_trips_2014,data_file_month,INT64,Datafile timestamp month value
+tlc_green_trips_2022,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_green_trips_2022,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_green_trips_2022,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_green_trips_2022,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_green_trips_2022,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_green_trips_2022,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_green_trips_2022,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_green_trips_2022,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_green_trips_2022,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_green_trips_2022,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_green_trips_2022,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_green_trips_2022,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_green_trips_2022,ehail_fee,NUMERIC,
+tlc_green_trips_2022,airport_fee,NUMERIC,
+tlc_green_trips_2022,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_green_trips_2022,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_green_trips_2022,distance_between_service,NUMERIC,
+tlc_green_trips_2022,time_between_service,INT64,
+tlc_green_trips_2022,trip_type,STRING,A code indicating whether the trip was a street-hail or a dispatch that is automatically assigned based on the metered rate in use but can be altered by the driver. 1= Street-hail 2= Dispatch
+tlc_green_trips_2022,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_green_trips_2022,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_green_trips_2022,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_green_trips_2022,data_file_year,INT64,Datafile timestamp year value
+tlc_green_trips_2022,data_file_month,INT64,Datafile timestamp month value
+tlc_yellow_trips_2019,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_yellow_trips_2019,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_yellow_trips_2019,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_yellow_trips_2019,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_yellow_trips_2019,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_yellow_trips_2019,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_yellow_trips_2019,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_yellow_trips_2019,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_yellow_trips_2019,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_yellow_trips_2019,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_yellow_trips_2019,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_yellow_trips_2019,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_yellow_trips_2019,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_yellow_trips_2019,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_yellow_trips_2019,airport_fee,NUMERIC,
+tlc_yellow_trips_2019,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_yellow_trips_2019,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_yellow_trips_2019,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_yellow_trips_2019,data_file_year,INT64,Datafile timestamp year value
+tlc_yellow_trips_2019,data_file_month,INT64,Datafile timestamp month value
+taxi_zone_geom,zone_id,STRING,Unique ID number of each taxi zone. Corresponds with the pickup_location_id and dropoff_location_id in each of the trips tables
+taxi_zone_geom,zone_name,STRING,Full text name of the taxi zone
+taxi_zone_geom,borough,STRING,Borough containing the taxi zone
+taxi_zone_geom,zone_geom,GEOGRAPHY,Geometric outline that defines the taxi zone suitable for GIS analysis.
+tlc_yellow_trips_2017,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_yellow_trips_2017,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_yellow_trips_2017,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_yellow_trips_2017,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_yellow_trips_2017,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_yellow_trips_2017,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_yellow_trips_2017,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_yellow_trips_2017,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_yellow_trips_2017,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_yellow_trips_2017,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_yellow_trips_2017,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_yellow_trips_2017,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_yellow_trips_2017,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_yellow_trips_2017,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_yellow_trips_2017,airport_fee,NUMERIC,
+tlc_yellow_trips_2017,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_yellow_trips_2017,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_yellow_trips_2017,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_yellow_trips_2017,data_file_year,INT64,Datafile timestamp year value
+tlc_yellow_trips_2017,data_file_month,INT64,Datafile timestamp month value
+tlc_yellow_trips_2012,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_yellow_trips_2012,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_yellow_trips_2012,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_yellow_trips_2012,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_yellow_trips_2012,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_yellow_trips_2012,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_yellow_trips_2012,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_yellow_trips_2012,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_yellow_trips_2012,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_yellow_trips_2012,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_yellow_trips_2012,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_yellow_trips_2012,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_yellow_trips_2012,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_yellow_trips_2012,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_yellow_trips_2012,airport_fee,NUMERIC,
+tlc_yellow_trips_2012,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_yellow_trips_2012,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_yellow_trips_2012,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_yellow_trips_2012,data_file_year,INT64,Datafile timestamp year value
+tlc_yellow_trips_2012,data_file_month,INT64,Datafile timestamp month value
+tlc_yellow_trips_2015,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_yellow_trips_2015,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_yellow_trips_2015,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_yellow_trips_2015,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_yellow_trips_2015,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_yellow_trips_2015,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_yellow_trips_2015,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_yellow_trips_2015,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_yellow_trips_2015,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_yellow_trips_2015,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_yellow_trips_2015,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_yellow_trips_2015,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_yellow_trips_2015,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_yellow_trips_2015,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_yellow_trips_2015,airport_fee,NUMERIC,
+tlc_yellow_trips_2015,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_yellow_trips_2015,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_yellow_trips_2015,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_yellow_trips_2015,data_file_year,INT64,Datafile timestamp year value
+tlc_yellow_trips_2015,data_file_month,INT64,Datafile timestamp month value
+tlc_yellow_trips_2018,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_yellow_trips_2018,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_yellow_trips_2018,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_yellow_trips_2018,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_yellow_trips_2018,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_yellow_trips_2018,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_yellow_trips_2018,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_yellow_trips_2018,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_yellow_trips_2018,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_yellow_trips_2018,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_yellow_trips_2018,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_yellow_trips_2018,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_yellow_trips_2018,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_yellow_trips_2018,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_yellow_trips_2018,airport_fee,NUMERIC,
+tlc_yellow_trips_2018,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_yellow_trips_2018,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_yellow_trips_2018,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_yellow_trips_2018,data_file_year,INT64,Datafile timestamp year value
+tlc_yellow_trips_2018,data_file_month,INT64,Datafile timestamp month value
+tlc_yellow_trips_2020,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_yellow_trips_2020,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_yellow_trips_2020,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_yellow_trips_2020,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_yellow_trips_2020,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_yellow_trips_2020,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_yellow_trips_2020,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_yellow_trips_2020,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_yellow_trips_2020,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_yellow_trips_2020,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_yellow_trips_2020,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_yellow_trips_2020,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_yellow_trips_2020,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_yellow_trips_2020,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_yellow_trips_2020,airport_fee,NUMERIC,
+tlc_yellow_trips_2020,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_yellow_trips_2020,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_yellow_trips_2020,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_yellow_trips_2020,data_file_year,INT64,Datafile timestamp year value
+tlc_yellow_trips_2020,data_file_month,INT64,Datafile timestamp month value
+tlc_fhv_trips_2015,location_id,INT64,The TLC taxi zone of the trip pick-up
+tlc_fhv_trips_2015,pickup_datetime,DATETIME,The date and time of the trip pick-up.
+tlc_fhv_trips_2015,dispatching_base_num,STRING,The TLC Base License Number of the base that dispatched the trip.
+tlc_fhv_trips_2015,borough,STRING,This is Pickup borough
+tlc_fhv_trips_2015,zone,STRING,This is Pickup zone
+tlc_fhv_trips_2015,service_zone,STRING,This is Pickup service_zone
+tlc_green_trips_2014,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_green_trips_2014,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_green_trips_2014,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_green_trips_2014,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_green_trips_2014,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_green_trips_2014,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_green_trips_2014,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_green_trips_2014,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_green_trips_2014,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_green_trips_2014,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_green_trips_2014,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_green_trips_2014,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_green_trips_2014,ehail_fee,NUMERIC,
+tlc_green_trips_2014,airport_fee,NUMERIC,
+tlc_green_trips_2014,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_green_trips_2014,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_green_trips_2014,distance_between_service,NUMERIC,
+tlc_green_trips_2014,time_between_service,INT64,
+tlc_green_trips_2014,trip_type,STRING,A code indicating whether the trip was a street-hail or a dispatch that is automatically assigned based on the metered rate in use but can be altered by the driver. 1= Street-hail 2= Dispatch
+tlc_green_trips_2014,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_green_trips_2014,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_green_trips_2014,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_green_trips_2014,data_file_year,INT64,Datafile timestamp year value
+tlc_green_trips_2014,data_file_month,INT64,Datafile timestamp month value
+tlc_yellow_trips_2022,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_yellow_trips_2022,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_yellow_trips_2022,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_yellow_trips_2022,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_yellow_trips_2022,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_yellow_trips_2022,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_yellow_trips_2022,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_yellow_trips_2022,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_yellow_trips_2022,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_yellow_trips_2022,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_yellow_trips_2022,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_yellow_trips_2022,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_yellow_trips_2022,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_yellow_trips_2022,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_yellow_trips_2022,airport_fee,NUMERIC,
+tlc_yellow_trips_2022,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_yellow_trips_2022,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_yellow_trips_2022,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_yellow_trips_2022,data_file_year,INT64,Datafile timestamp year value
+tlc_yellow_trips_2022,data_file_month,INT64,Datafile timestamp month value
+tlc_green_trips_2023,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_green_trips_2023,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_green_trips_2023,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_green_trips_2023,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_green_trips_2023,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_green_trips_2023,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_green_trips_2023,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_green_trips_2023,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_green_trips_2023,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_green_trips_2023,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_green_trips_2023,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_green_trips_2023,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_green_trips_2023,ehail_fee,NUMERIC,
+tlc_green_trips_2023,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_green_trips_2023,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_green_trips_2023,distance_between_service,NUMERIC,
+tlc_green_trips_2023,time_between_service,INT64,
+tlc_green_trips_2023,trip_type,STRING,A code indicating whether the trip was a street-hail or a dispatch that is automatically assigned based on the metered rate in use but can be altered by the driver. 1= Street-hail 2= Dispatch
+tlc_green_trips_2023,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_green_trips_2023,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_green_trips_2023,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_green_trips_2023,data_file_year,INT64,Datafile timestamp year value
+tlc_green_trips_2023,data_file_month,INT64,Datafile timestamp month value
+tlc_fhv_trips_2017,location_id,INT64,The TLC taxi zone of the trip pick-up
+tlc_fhv_trips_2017,pickup_datetime,DATETIME,The date and time of the trip pick-up.
+tlc_fhv_trips_2017,dispatching_base_num,STRING,The TLC Base License Number of the base that dispatched the trip.
+tlc_fhv_trips_2017,borough,STRING,This is Pickup borough
+tlc_fhv_trips_2017,zone,STRING,This is Pickup zone
+tlc_fhv_trips_2017,service_zone,STRING,This is Pickup service_zone
+tlc_fhv_trips_2017,dropoff_datetime,DATETIME,
+tlc_fhv_trips_2017,dropoff_location_id,INT64,
+tlc_fhv_trips_2017,dropoff_borough,STRING,
+tlc_fhv_trips_2017,dropoff_zone,STRING,
+tlc_fhv_trips_2017,dropoff_service_zone,STRING,
+tlc_green_trips_2017,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_green_trips_2017,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_green_trips_2017,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_green_trips_2017,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_green_trips_2017,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_green_trips_2017,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_green_trips_2017,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_green_trips_2017,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_green_trips_2017,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_green_trips_2017,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_green_trips_2017,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_green_trips_2017,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_green_trips_2017,ehail_fee,NUMERIC,
+tlc_green_trips_2017,airport_fee,NUMERIC,
+tlc_green_trips_2017,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_green_trips_2017,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_green_trips_2017,distance_between_service,NUMERIC,
+tlc_green_trips_2017,time_between_service,INT64,
+tlc_green_trips_2017,trip_type,STRING,A code indicating whether the trip was a street-hail or a dispatch that is automatically assigned based on the metered rate in use but can be altered by the driver. 1= Street-hail 2= Dispatch
+tlc_green_trips_2017,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_green_trips_2017,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_green_trips_2017,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_green_trips_2017,data_file_year,INT64,Datafile timestamp year value
+tlc_green_trips_2017,data_file_month,INT64,Datafile timestamp month value
+tlc_yellow_trips_2011,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_yellow_trips_2011,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_yellow_trips_2011,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_yellow_trips_2011,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_yellow_trips_2011,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_yellow_trips_2011,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_yellow_trips_2011,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_yellow_trips_2011,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_yellow_trips_2011,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_yellow_trips_2011,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_yellow_trips_2011,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_yellow_trips_2011,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_yellow_trips_2011,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_yellow_trips_2011,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_yellow_trips_2011,airport_fee,NUMERIC,
+tlc_yellow_trips_2011,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_yellow_trips_2011,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_yellow_trips_2011,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_yellow_trips_2011,data_file_year,INT64,Datafile timestamp year value
+tlc_yellow_trips_2011,data_file_month,INT64,Datafile timestamp month value
+tlc_green_trips_2021,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_green_trips_2021,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_green_trips_2021,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_green_trips_2021,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_green_trips_2021,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_green_trips_2021,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_green_trips_2021,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_green_trips_2021,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_green_trips_2021,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_green_trips_2021,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_green_trips_2021,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_green_trips_2021,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_green_trips_2021,ehail_fee,NUMERIC,
+tlc_green_trips_2021,airport_fee,NUMERIC,
+tlc_green_trips_2021,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_green_trips_2021,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_green_trips_2021,distance_between_service,NUMERIC,
+tlc_green_trips_2021,time_between_service,INT64,
+tlc_green_trips_2021,trip_type,STRING,A code indicating whether the trip was a street-hail or a dispatch that is automatically assigned based on the metered rate in use but can be altered by the driver. 1= Street-hail 2= Dispatch
+tlc_green_trips_2021,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_green_trips_2021,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_green_trips_2021,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_green_trips_2021,data_file_year,INT64,Datafile timestamp year value
+tlc_green_trips_2021,data_file_month,INT64,Datafile timestamp month value
+tlc_green_trips_2020,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_green_trips_2020,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_green_trips_2020,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_green_trips_2020,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_green_trips_2020,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_green_trips_2020,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_green_trips_2020,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_green_trips_2020,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_green_trips_2020,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_green_trips_2020,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_green_trips_2020,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_green_trips_2020,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_green_trips_2020,ehail_fee,NUMERIC,
+tlc_green_trips_2020,airport_fee,NUMERIC,
+tlc_green_trips_2020,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_green_trips_2020,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_green_trips_2020,distance_between_service,NUMERIC,
+tlc_green_trips_2020,time_between_service,INT64,
+tlc_green_trips_2020,trip_type,STRING,A code indicating whether the trip was a street-hail or a dispatch that is automatically assigned based on the metered rate in use but can be altered by the driver. 1= Street-hail 2= Dispatch
+tlc_green_trips_2020,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_green_trips_2020,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_green_trips_2020,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_green_trips_2020,data_file_year,INT64,Datafile timestamp year value
+tlc_green_trips_2020,data_file_month,INT64,Datafile timestamp month value
+tlc_green_trips_2016,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_green_trips_2016,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_green_trips_2016,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_green_trips_2016,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_green_trips_2016,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_green_trips_2016,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_green_trips_2016,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_green_trips_2016,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_green_trips_2016,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_green_trips_2016,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_green_trips_2016,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_green_trips_2016,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_green_trips_2016,ehail_fee,NUMERIC,
+tlc_green_trips_2016,airport_fee,NUMERIC,
+tlc_green_trips_2016,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_green_trips_2016,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_green_trips_2016,distance_between_service,NUMERIC,
+tlc_green_trips_2016,time_between_service,INT64,
+tlc_green_trips_2016,trip_type,STRING,A code indicating whether the trip was a street-hail or a dispatch that is automatically assigned based on the metered rate in use but can be altered by the driver. 1= Street-hail 2= Dispatch
+tlc_green_trips_2016,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_green_trips_2016,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_green_trips_2016,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_green_trips_2016,data_file_year,INT64,Datafile timestamp year value
+tlc_green_trips_2016,data_file_month,INT64,Datafile timestamp month value
+tlc_yellow_trips_2021,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_yellow_trips_2021,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_yellow_trips_2021,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_yellow_trips_2021,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_yellow_trips_2021,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_yellow_trips_2021,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_yellow_trips_2021,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_yellow_trips_2021,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_yellow_trips_2021,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_yellow_trips_2021,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_yellow_trips_2021,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_yellow_trips_2021,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_yellow_trips_2021,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_yellow_trips_2021,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_yellow_trips_2021,airport_fee,NUMERIC,
+tlc_yellow_trips_2021,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_yellow_trips_2021,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_yellow_trips_2021,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_yellow_trips_2021,data_file_year,INT64,Datafile timestamp year value
+tlc_yellow_trips_2021,data_file_month,INT64,Datafile timestamp month value
+tlc_green_trips_2015,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_green_trips_2015,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_green_trips_2015,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_green_trips_2015,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_green_trips_2015,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_green_trips_2015,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_green_trips_2015,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_green_trips_2015,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_green_trips_2015,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_green_trips_2015,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_green_trips_2015,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_green_trips_2015,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_green_trips_2015,ehail_fee,NUMERIC,
+tlc_green_trips_2015,airport_fee,NUMERIC,
+tlc_green_trips_2015,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_green_trips_2015,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_green_trips_2015,distance_between_service,NUMERIC,
+tlc_green_trips_2015,time_between_service,INT64,
+tlc_green_trips_2015,trip_type,STRING,A code indicating whether the trip was a street-hail or a dispatch that is automatically assigned based on the metered rate in use but can be altered by the driver. 1= Street-hail 2= Dispatch
+tlc_green_trips_2015,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_green_trips_2015,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_green_trips_2015,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_green_trips_2015,data_file_year,INT64,Datafile timestamp year value
+tlc_green_trips_2015,data_file_month,INT64,Datafile timestamp month value
+tlc_yellow_trips_2013,vendor_id,STRING,"A code indicating the LPEP provider that provided the record. 1= Creative Mobile Technologies, LLC; 2= VeriFone Inc."
+tlc_yellow_trips_2013,pickup_datetime,TIMESTAMP,The date and time when the meter was engaged
+tlc_yellow_trips_2013,dropoff_datetime,TIMESTAMP,The date and time when the meter was disengaged
+tlc_yellow_trips_2013,passenger_count,INT64,The number of passengers in the vehicle. This is a driver-entered value.
+tlc_yellow_trips_2013,trip_distance,NUMERIC,The elapsed trip distance in miles reported by the taximeter.
+tlc_yellow_trips_2013,rate_code,STRING,The final rate code in effect at the end of the trip. 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride
+tlc_yellow_trips_2013,store_and_fwd_flag,STRING,"This flag indicates whether the trip record was held in vehicle memory before sending to the vendor, aka 'store and forward,' because the vehicle did not have a connection to the server. Y= store and forward trip N= not a store and forward trip"
+tlc_yellow_trips_2013,payment_type,STRING,A numeric code signifying how the passenger paid for the trip. 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip
+tlc_yellow_trips_2013,fare_amount,NUMERIC,The time-and-distance fare calculated by the meter
+tlc_yellow_trips_2013,extra,NUMERIC,"Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges"
+tlc_yellow_trips_2013,mta_tax,NUMERIC,$0.50 MTA tax that is automatically triggered based on the metered rate in use
+tlc_yellow_trips_2013,tip_amount,NUMERIC,Tip amount. This field is automatically populated for credit card tips. Cash tips are not included.
+tlc_yellow_trips_2013,tolls_amount,NUMERIC,Total amount of all tolls paid in trip.
+tlc_yellow_trips_2013,imp_surcharge,NUMERIC,$0.30 improvement surcharge assessed on hailed trips at the flag drop. The improvement surcharge began being levied in 2015.
+tlc_yellow_trips_2013,airport_fee,NUMERIC,
+tlc_yellow_trips_2013,total_amount,NUMERIC,The total amount charged to passengers. Does not include cash tips.
+tlc_yellow_trips_2013,pickup_location_id,STRING,TLC Taxi Zone in which the taximeter was engaged
+tlc_yellow_trips_2013,dropoff_location_id,STRING,TLC Taxi Zone in which the taximeter was disengaged
+tlc_yellow_trips_2013,data_file_year,INT64,Datafile timestamp year value
+tlc_yellow_trips_2013,data_file_month,INT64,Datafile timestamp month value
+country_codes,country_name,STRING,
+country_codes,alpha_2_code,STRING,
+country_codes,alpha_3_code,STRING,
+crime,unique_key,INT64,
+crime,case_number,STRING,
+crime,date,TIMESTAMP,
+crime,block,STRING,
+crime,iucr,STRING,
+crime,primary_type,STRING,
+crime,description,STRING,
+crime,location_description,STRING,
+crime,arrest,BOOL,
+crime,domestic,BOOL,
+crime,beat,INT64,
+crime,district,INT64,
+crime,ward,INT64,
+crime,community_area,INT64,
+crime,fbi_code,STRING,
+crime,x_coordinate,FLOAT64,
+crime,y_coordinate,FLOAT64,
+crime,year,INT64,
+crime,updated_on,TIMESTAMP,
+crime,latitude,FLOAT64,
+crime,longitude,FLOAT64,
+crime,location,STRING,
